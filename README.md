@@ -1,4 +1,4 @@
-# 한국항공대 2기 UMC WEB 스터디 Repository
+# 한국항공대 2기 UMC WEB 스터디
 
 
 ## 스터디 규칙
