@@ -12,8 +12,6 @@
 
 **진행 방식**
 
->팀원들과 상의해보기
-
 각자 수업을 듣고 공부 진행 후
 
 과제를 진행하며 막혔던 점 공부한 점을 정리하여 회의를 진행
@@ -22,8 +20,34 @@
 
 >파일 및 폴더 구조
 
-자기이름/(n)week 폴더에 자신의 과제 및 프로젝트를 넣고
-pull request 
+깃 환경과 자기의 Local환경을 동기화하는 법
+git pull origin main
+
+자기의 변경사항을 branch에 add 하는 법
+git add .
+
+add 한 스테이트 보는 법
+git status
+
+깃 커밋 하는법
+git commit -m "커밋할 내용"
+
+커밋한 것을 브랜치에 넣는법
+git push origin 브랜치명
+
+pull request 넣는법
+pull reqeust 클릭 후,
+![image](https://user-images.githubusercontent.com/14178811/159027160-24d8d35c-f6c0-47e9-9cc5-1c123bdd27ab.png)
+new pull request 요청
+
+
+요청된 pull request에 적어도 한명은 리뷰 작성 후, 머지가 가능하다.
+![image](https://user-images.githubusercontent.com/14178811/159027311-1ebd525a-b9b1-447d-82b5-908992aff4d8.png)
+
+머지는 금요일 오후 10시에 같이 스터디하면서 머지할 예정.
+
+
+
 
 ## 스터디 모임시간
 
