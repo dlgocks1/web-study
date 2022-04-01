@@ -1,0 +1,119 @@
+/* global */
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+a, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/* nav bar */
+nav{
+    padding : 0 16px;
+    justify-content: space-between;
+    position: fixed;
+    height: 56px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: white;
+}
+
+.nav-icon{
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.nav-button{
+    padding: 8px;
+}
+
+/* nav left */
+#logo{
+    box-sizing: content-box;
+    width: 97px;
+    height: 20px;
+    padding: 18px 14px 18px 16px;
+}
+
+#nav-country{
+    margin: 12px 0 0 -10px;
+    color: #aaa;
+    font-size: 10px;
+    height: 44px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/* nav center */
+.nav-center{
+    flex-basis: 728px;
+}
+#search-form{
+    flex: 1;
+    margin: 0 0 0 40px;
+    padding: 0 4px;
+}
+#search-form input{
+    padding: 2px 6px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 2px 0 0 2px;
+    flex: 1;
+    height: 40px;
+}
+
+#search-form input ::placeholder{
+    color: hsla(0, 100%, 100%, 0.88);
+    font-size: 16px;
+}
+
+#search-form button{
+    background-color: #f8f8f8;
+    border: 1px solid #d3d3d3;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    height: 40px;
+    width: 64px;
+    margin: 0;
+    justify-content: center;
+}
+
+#mic_btn{
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    margin-left: 4px;
+}
+
+/* nav right */
+#profile-btn{
+    padding: 1px 6px;
+
+}
+
+#profile-btn img{
+    margin: 0 8px;
+    border-radius: 50%;
+}
+.nav-right{
+    min-width: 225px;
+    justify-content: flex-end;
+}
+
+.nav-right .nav-button{
+    margin-right: 8px;
+}
