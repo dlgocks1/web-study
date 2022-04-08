@@ -1,0 +1,40 @@
+/* css 문법 : 선택자 { css 속성 : value } */
+/*  태그, 클래스 , id */
+
+div {
+    width : 100px;
+    height : 100px;
+    margin : 10px;
+    font-size : 30px;
+    background-color : pink;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.lightblue {
+    background-color: lightblue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+div:hover {
+    background-color : grey;
+};
+
+#green:hover {
+    background-color : grey;
+} /* id */
+
+dic:active {
+    background-color: purple;
+} 
+/* 계속 누르고 있어야함 */
+
+input:focus {
+    background-color: red;
+}
+/* 한 번 클릭하면 가능 */
