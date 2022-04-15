@@ -1,0 +1,281 @@
+/* global */
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 10px;
+    background-color: #181818;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 56px;
+    background-color: #181818;
+
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+a, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/* nav bar */
+#navContainer{
+    padding : 0 16px;
+    justify-content: space-between;
+    position: fixed;
+    height: 56px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #181818;
+}
+
+.nav-icon{
+    width: 24px;
+    height: 24px;
+    display: block;
+    fill: #fff;
+}
+
+#search-icon{
+    background-color: #313131;
+}
+
+.nav-button{
+    padding: 8px;
+}
+
+/* nav left */
+#logo{
+    box-sizing: content-box;
+    width: 97px;
+    height: 20px;
+    padding: 18px 14px 18px 16px;
+    color: white;
+    
+    fill: #fff;
+}
+
+#nav-country{
+    margin: 12px 0 0 -10px;
+    color: #aaa;
+    font-size: 10px;
+    height: 44px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.style-scope yt-icon{
+    color: white;
+}
+
+/* nav center */
+.nav-center{
+    flex-basis: 636px;
+    padding : 2px 6px;
+    margin-left: 34px;
+}
+
+#search-form{
+    flex: 1;
+    height: 40px;
+}
+
+#search-form input{
+    padding: 2px 6px;
+    border: 1px solid  #313131;
+    background-color: #181818;
+    border-right: none;
+    border-radius: 2px 0 0 2px;
+    flex: 1;
+    height: 40px;
+    font-size: 16px;
+}
+
+#search-form input ::placeholder{
+    color: hsl(205.9, 80%, 43.1%);
+    font-size: 255px;
+}
+
+#search-form input:focus{
+    outline: none;
+}
+
+
+#search-form button{
+    background-color: #313131;
+    border: 1px solid #313131;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    height: 40px;
+    width: 64px;
+    margin: 0;
+    justify-content: center;
+}
+
+#mic_btn{
+    border-radius: 50%;
+    background-color: #181818;
+    margin-left: 4px;
+}
+
+
+/* nav right */
+#profile-btn{
+    padding: 1px 6px;
+
+}
+
+#profile-btn img{
+    margin: 0 8px;
+    border-radius: 50%;
+}
+.nav-right{
+    min-width: 225px;
+    justify-content: flex-end;
+}
+
+.nav-right .nav-button{
+    margin-right: 8px;
+}
+
+
+/* main */
+main {
+	margin-top: 56px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+/* primary */
+.primary{
+    margin-left: 20px;
+    padding : 24px, 0px;
+    margin: 24px 24px 0px 20px;
+}
+
+#vedioPlayerContainer {
+	width: 640px;
+	height: 360px;
+    
+}
+
+#videoInfoContainer {
+    
+}
+
+.hashtagContainer{
+	color: #2798DA;
+    padding: 20px 0 0px 0;
+    line-height: 20px;
+}
+
+.hashtagContainer a{
+    font-size: 1.1rem;
+}
+/* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+
+#vedioTitle{
+    font-size: 1.8rem;
+    /* line-height: 2.6rem; */
+    color: white;
+}
+
+#extraInfoContainer{
+    display: flex;
+	align-items: center;
+    margin: 10px 12px 10px 0px;
+    width: 100%;
+}
+
+.extraInfo{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #AAAAAA;
+}
+
+#dot:after{
+    content: "•";
+    margin: 0 4px;
+    color: #AAAAAA;
+}
+
+
+#menuContainer {
+    top:4px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 8px;
+}
+
+.menuItem {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    fill: white;
+}
+
+.menuIcon{
+    width: 24px;
+    height: 24px;
+    margin: 6px;
+}
+
+.menuText{
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* second창 */
+.second {
+	padding: 24px 24px 0 0;
+}
+
+.videoItemContainer{
+    display: flex;    
+    margin-top: 8px;
+}
+.videoThumbnailContainer{
+    margin-right: 8px;
+}
+
+.vedioDetailConatiner{
+    display: flex;
+    
+}
+
+.videoMetaDetails{
+}
+
+.vedioTitle{
+    margin: 0 0 4px 0;
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 500;
+    max-height: 4rem;
+    overflow: hidden;
+    color: white;
+}
+
+.metaText{
+    font-size: 1.2rem;
+    color: #AAAAAA;
+
+}
