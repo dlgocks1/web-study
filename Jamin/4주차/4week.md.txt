@@ -1,0 +1,28 @@
+# 핵심 키워드 🎯
+
+- DOM과 JavaScript
+
+document = html
+
+document.getElementsByTagName(’body’)  유사배열 (일반적인 배열을 아님) + elements에서 s는 여러가지가 나올 수 있기 때문에 붙여줘야됨
+
+innertext  태그를 제외하고 텍스트들을 모두 나열해줌
+
+innerHtml  태그포함 모든 것을 나열해줌
+
+- querySelector
+
+단수이기 때문에 조건에 만족하는 첫 번째 원소만 출력
+
+spread operator, Array.from ⇒ 유사배열을 배열로 바꿔줌
+
+- appendChild
+- insertAdjacentHTML
+
+ 자바스크립트에서도 스타일을 변경시킬 수 있지만 css에서 하는 것을 권장
+
+$body[0].style.backgroundColor = ‘teal’;
+
+- element 추가
+
+document.createElement()
