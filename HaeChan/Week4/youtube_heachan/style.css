@@ -8,6 +8,11 @@
     background-color: #181818;
 }
 
+button {
+    border: none;
+    background-color: transparent;
+}
+
 main{
     display: flex;
     justify-content: center;
@@ -174,18 +179,17 @@ main {
     
 }
 
-#videoInfoContainer {
-    
+#vedioInfoContainer {
+    margin-top: 20px;
 }
 
 .hashtagContainer{
 	color: #2798DA;
-    padding: 20px 0 0px 0;
     line-height: 20px;
 }
 
 .hashtagContainer a{
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
 
@@ -232,6 +236,7 @@ main {
 }
 
 .menuIcon{
+    fill: white;
     width: 24px;
     height: 24px;
     margin: 6px;
@@ -277,5 +282,216 @@ main {
 .metaText{
     font-size: 1.2rem;
     color: #AAAAAA;
+}
 
+#mainMetaContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    margin-bottom: 12px;
+}
+
+.channelImg{
+    height:48px;
+    width:48px;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+
+.channelImgcontainer{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.infoBox{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.infoBox p:first-child {
+    font-size: 1.5rem;
+    color:white;
+}
+
+.infoBox p:nth-child(2) {
+    font-size: 1.2rem;
+    color: #AAAAAA;
+}
+
+#subscribeContainer{
+    display: flex;
+    align-content: center;
+    padding: 10px 0px;
+}
+
+#subscribeBtn{
+    text-transform: capitalize;
+    border-radius: 2px;
+    padding: 10px 16px;
+    background-color: #313131;
+    color: #AAAAAA;
+    font-size: 1.3rem;
+    margin:0 4px;
+}
+
+#notfication-alarm{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+#subMetaContainer{
+    margin-left: 64px;
+}
+
+#content{
+    font-size: 1.4rem;
+    color: white;
+}
+
+.formatted-string{
+    font-size: 1.4rem;
+	color: #2798DA;
+}
+
+#videMetaContainer {
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.commentheader{
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 32px;
+
+}
+
+.commentheader:nth-child(3){
+}
+
+#commentCount{
+    color: white;
+    font-size: 16px;
+}
+
+.commentSort{
+    display: flex;
+    align-items: center;
+}
+
+#commentInfoSection{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+
+#commentInputSection{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#commentInputContainer{
+    flex: 1;
+}
+
+#commentInput {
+    display: block;
+    padding-bottom: 4px;
+    width: 100%;
+    color: #AAAAAA;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#videoCommentHeadr{
+    margin-bottom: 32px;
+}
+
+#placeholder-area{
+    cursor: text;
+    padding-bottom: 4px;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+    flex: 1;
+}
+
+#simplebox-placeholder{
+    color: #AAAAAA;
+
+}
+
+.profileImg{
+    height:40px;
+    width:40px;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+
+#commentsList{
+
+}
+
+.commentItem{
+    display: flex;
+	margin-bottom: 16px;
+
+}
+
+.commentItem #commentName {
+	font-size: 1.5rem;
+    font-weight: 500;
+	margin-bottom: 2px;
+    color: white;
+}
+
+.commentItem #commentName #commentLasttime{
+    line-height: 2rem;
+    color: #AAAAAA;
+	font-size: 1.2rem;
+}
+
+.comment{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: white;
+}
+
+.commentIcon {
+	display: block;
+	width: 16px;
+	height: 16px;
+    fill: white;
+}
+
+.commentBtn {
+	padding: 8px;
+    color: #AAAAAA;
+    font-size: 1.2rem;
+}
+
+
+.commentreview-holder{
+    margin-top: 4px;
+}
+
+#reviewBtn{
+    padding : 8px 16px;
+}
+
+.reviewcnt{
+    margin-right: 8px;
+    font-size: 1.2rem;
+    color: #AAAAAA;
 }
