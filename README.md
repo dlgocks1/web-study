@@ -1,5 +1,7 @@
 # 한국항공대 2기 UMC WEB 스터디
 
+* 자료링크 https://github.com/udemy-comgongbro/udemy_web_youtube
+
 > UMC 2기 웹 수업을 따라가기 위한 스터디입니다.
 > 
 스터디 이름 : 이해가 술술 이해찬과 함께하는 웹 스터디
