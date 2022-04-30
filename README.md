@@ -12,7 +12,7 @@
 
 ## 스터디 규칙
 
-Commit 명 220415_N주차_Nickname
+> **Commit 명 220415_N주차_Nickname**
 
 **진행 방식**
 
