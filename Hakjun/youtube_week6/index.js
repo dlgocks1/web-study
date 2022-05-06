@@ -35,6 +35,24 @@ const commentItemTemplate = (newComment) => {
 
 $commentForm.addEventListener('submit', handleSumbit);
 
+
+const comments =[];
+
+function saveItem(){
+	localStorage.setItem('comments', JSON.stringify(comments))
+}
+function displayHistory (){
+	const savedComments = JSON.parse(localStorage.getItem('comments'));
+
+	savedComments.map(comment => {
+		const newCommentItem = commentItemTemplate(comment);
+		comments.push(comment);
+		$commentList.insertAdjacentHTML('afterbegin',newCommentItem);
+	})
+}
+
+displayHistory();
+
 function handleSumbit(event){
 	event.preventDefault();
 	const newComment = $commentInput.value;
@@ -43,4 +61,7 @@ function handleSumbit(event){
 	const newCommentItem = commentItemTemplate(newComment);
 	$commentList.insertAdjacentHTML('afterbegin', newCommentItem);
   $commentInput.value = "";
+
+  comments.push(newComment);
+  saveItem();
 }
