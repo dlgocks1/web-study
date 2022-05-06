@@ -273,15 +273,33 @@ main {
     font-family: "Roboto","Arial",sans-serif;
     font-size: 1.4rem;
     line-height: 2rem;
+
     font-weight: 500;
     max-height: 4rem;
     overflow: hidden;
     color: white;
 }
 
+/* .vedioTitle::after{
+    content: "..."
+} */
+
 .metaText{
     font-size: 1.2rem;
     color: #AAAAAA;
+    font-family: "Roboto","Arial",sans-serif;
+
+    line-height: 1.5rem;
+    max-height: 1.5rem;
+    overflow: hidden;
+    /* -webkit-line-clamp: 1 */
+}
+.extraMeta{
+    line-height: 1.5rem;
+    max-height: 1.5rem;
+    overflow: hidden;
+    /*  보여줄 줄 갯수 크롬, 사파리 제공 */
+    /* -webkit-line-clamp: 1 */
 }
 
 #mainMetaContainer{
