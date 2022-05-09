@@ -15,7 +15,6 @@ function fetchVedio(){
 
 fetchVedio();
 
-
 function vedioCardTemplate(data){
     console.log(data);
     const vedioItem = `
