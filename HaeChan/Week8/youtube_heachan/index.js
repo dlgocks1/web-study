@@ -2,18 +2,18 @@ const YOUR_API_KEY = "AIzaSyC5fc5p4UViSf7BV-LIgT_c-BgmZa7uTEU";
 const $contentBox = document.querySelector('.contentBox')
 
 function fetchVedio(){
-    fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2C%20statistics&chart=mostPopular&maxResults=1000&regionCode=KR&key=${YOUR_API_KEY}`)
-    .then(res => res.json())
-    .then(res => res.items.map(vedio=>
-        vedioCardTemplate(vedio)
-    ))
+    axios.get(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2C%20statistics&chart=mostPopular&maxResults=1000&regionCode=KR&key=${YOUR_API_KEY}`)
+    .then(res => {
+         res.data.items.map(item=>
+            vedioCardTemplate(item))
+        // res.items.map(vedio=>
+        // vedioCardTemplate(vedio)
+        // )}
+    })
     .catch(error => console.log(error))
 }
 
-// https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2C%20statistics&chart=mostPopular&m
-
 fetchVedio();
-
 
 
 function vedioCardTemplate(data){
@@ -34,12 +34,12 @@ function vedioCardTemplate(data){
                 </div>
                 <div class="vedioMetaData">
                     <p>
-                        SUPER SOUND Bugs!
+                    ${data.snippet.channelTitle}    
                     </p>
                     <p>
-                        <span> 조회수 74만회
+                        <span> ${vedioViewTextControle(data.statistics.viewCount)}
                             </span><span id="dot"></span>
-                            <span>${data.snippet.publishedAt}</span>
+                            <span>${luxon.DateTime.fromISO(data.snippet.publishedAt).toRelative()}</span>
                     </p>
                 </div>
             </div>
@@ -47,4 +47,16 @@ function vedioCardTemplate(data){
     </div>
 </div>`
     $contentBox.insertAdjacentHTML('beforeend',vedioItem);
+}
+
+function vedioViewTextControle(view){
+    if( Number(view) > 10000){
+        return "조회수 : "+(Number(view)/10000).toFixed(0) + '만회';
+    }else if(Number(view) > 100){
+        return "조회수 : "+(Number(view)/100).toFixed(0) + '천회';
+    }
+    else{
+        return "조회수 : "+(Number(view)).toFixed(0) + '회';
+    }
+    return view
 }

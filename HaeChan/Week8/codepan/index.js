@@ -11,7 +11,7 @@ const result = [];
 // .then(res => res.json())
 // .then(data => {
 //     data.map(item =>
-//         result.push(item.name)
+//         result.push(item)
 //         )})
 // .catch(error => console.log(error))
 
@@ -26,22 +26,25 @@ const result = [];
 
 // const dataResult = datafetch();
 // console.log(dataResult);
+// dataResult.then(
+//     it => console.log(it)
+// )
 
 // 2. axios 
-// <script src="https://unpkg.com/axios/dist/axios.min.js"></script> HTML내에 추가
+{/* <script src="https://unpkg.com/axios/dist/axios.min.js"></script> HTML내에 추가 */}
 axios.get("https://jsonplaceholder.typicode.com/users")
 .then(data => console.log(data.data))
 
-const datafetch = async() =>{
-    const res = await axios.get("https://jsonplaceholder.typicode.com/users");
-    // Promise 객체가 리턴됨
-    return res;
-}
+// const datafetch = async() =>{
+//     const res = await axios.get("https://jsonplaceholder.typicode.com/users");
+//     // Promise 객체가 리턴됨
+//     return res;
+// }
 
-const dataResult = datafetch();
+// const dataResult = datafetch();
 
-// Promise임으로 then으로 사후처리
-dataResult.then(
-    data => console.log(data)
-)
+// // Promise임으로 then으로 사후처리
+// dataResult.then(
+//     data => console.log(data)
+// )
 
