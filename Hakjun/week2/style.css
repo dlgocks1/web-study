@@ -1,0 +1,42 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button{
+  border: none;  
+  /* 경계값 없음 */
+  background-color: transparent;
+   /*배경색 무색  */
+  cursor: pointer;
+  /* 커서를 갔을 때 포인터로 변경 */
+}
+
+a, a:active{
+  text-decoration: none; 
+  /* 텍스트 장식 없음 */
+  color: inherit;
+  /* 색깔 상속? */
+}
+
+nav{
+  padding: 0 16px;
+  /* 상하, 좌우 */
+  display: flex;
+  /* ? */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-icon{
+  width: 24px;
+  height: 24px;
+}
+
+.header-icon{
+  width: 24px;
+  height: 24px;
+  display: block;
+}

@@ -1,0 +1,663 @@
+/* global */
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 10px;
+    /* background-color: #202020; */
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+main{
+    /* display: flex; */
+    /* justify-content: center; */
+        /* width: 100%;  */
+    margin-top: 56px;
+    
+    background-color: #202020;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+a, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/* nav bar */
+#navContainer{
+    padding : 0 16px;
+    justify-content: space-between;
+    position: fixed;
+    height: 56px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #202020;
+}
+
+
+.nav-icon{
+    width: 24px;
+    height: 24px;
+    display: block;
+    fill: #fff;
+}
+
+#search-icon{
+    background-color: #313131;
+}
+
+.nav-button{
+    padding: 8px;
+}
+
+/* nav left */
+#logo{
+    box-sizing: content-box;
+    width: 97px;
+    height: 20px;
+    padding: 18px 14px 18px 16px;
+    color: white;
+    
+    fill: #fff;
+}
+
+#nav-country{
+    margin: 12px 0 0 -10px;
+    color: #aaa;
+    font-size: 10px;
+    height: 44px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.style-scope yt-icon{
+    color: white;
+}
+
+/* nav center */
+.nav-center{
+    flex-basis: 636px;
+    padding : 2px 6px;
+    margin-left: 34px;
+}
+
+#search-form{
+    flex: 1;
+    height: 40px;
+}
+
+#search-form input{
+    padding: 2px 6px;
+    border: 1px solid  #313131;
+    background-color: #181818;
+    border-right: none;
+    border-radius: 2px 0 0 2px;
+    flex: 1;
+    height: 40px;
+    font-size: 16px;
+}
+
+#search-form input ::placeholder{
+    color: hsl(205.9, 80%, 43.1%);
+    font-size: 255px;
+}
+
+#search-form input:focus{
+    outline: none;
+}
+
+
+#search-form button{
+    background-color: #313131;
+    border: 1px solid #313131;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    height: 40px;
+    width: 64px;
+    margin: 0;
+    justify-content: center;
+}
+
+#mic_btn{
+    border-radius: 50%;
+    background-color: #181818;
+    margin-left: 4px;
+}
+
+
+/* nav right */
+#profile-btn{
+    padding: 1px 6px;
+
+}
+
+#profile-btn img{
+    margin: 0 8px;
+    border-radius: 50%;
+}
+.nav-right{
+    min-width: 225px;
+    justify-content: flex-end;
+}
+
+.nav-right .nav-button{
+    margin-right: 8px;
+}
+
+
+
+/* primary */
+.primary{
+    margin-left: 20px;
+    padding : 24px, 0px;
+    margin: 24px 24px 0px 20px;
+}
+
+#vedioPlayerContainer {
+	width: 640px;
+	height: 360px;
+    
+}
+
+#vedioInfoContainer {
+    margin-top: 20px;
+}
+
+.hashtagContainer{
+	color: #2798DA;
+    line-height: 20px;
+    
+}
+
+.hashtagContainer a{
+    font-size: 1.4rem;
+}
+/* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+
+#vedioTitle{
+    font-size: 1.8rem;
+    /* line-height: 2.6rem; */
+    color: white;
+}
+
+#extraInfoContainer{
+    display: flex;
+	align-items: center;
+    margin: 10px 12px 10px 0px;
+    width: 100%;
+}
+
+.extraInfo{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #AAAAAA;
+}
+
+#dot:after{
+    content: "•";
+    margin: 0 4px;
+    color: #AAAAAA;
+}
+
+
+#menuContainer {
+    top:4px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 8px;
+}
+
+.menuItem {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    fill: white;
+}
+
+.menuIcon{
+    fill: white;
+    width: 24px;
+    height: 24px;
+    margin: 6px;
+}
+
+.menuText{
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* second창 */
+.second {
+	padding: 24px 24px 0 0;
+}
+
+.videoItemContainer{
+    display: flex;    
+    margin-top: 8px;
+}
+.videoThumbnailContainer{
+    margin-right: 8px;
+}
+
+.vedioDetailConatiner{
+    display: flex;
+    
+}
+
+.videoMetaDetails{
+}
+
+.vedioTitle{
+    margin: 0 0 4px 0;
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 500;
+    max-height: 4rem;
+    overflow: hidden;
+    color: white;
+}
+
+/* .vedioTitle::after{
+    content: "..."
+} */
+
+.metaText{
+    font-size: 1.2rem;
+    color: #AAAAAA;
+    font-family: "Roboto","Arial",sans-serif;
+
+    line-height: 1.5rem;
+    max-height: 1.5rem;
+    overflow: hidden;
+    /* -webkit-line-clamp: 1 */
+}
+.extraMeta{
+    line-height: 1.5rem;
+    max-height: 1.5rem;
+    overflow: hidden;
+    /*  보여줄 줄 갯수 크롬, 사파리 제공 */
+    /* -webkit-line-clamp: 1 */
+}
+
+#mainMetaContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    margin-bottom: 12px;
+}
+
+
+.channelImgcontainer{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.infoBox{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.infoBox p:first-child {
+    font-size: 1.5rem;
+    color:white;
+}
+
+.infoBox p:nth-child(2) {
+    font-size: 1.2rem;
+    color: #AAAAAA;
+}
+
+#subscribeContainer{
+    display: flex;
+    align-content: center;
+    padding: 10px 0px;
+}
+
+#subscribeBtn{
+    text-transform: capitalize;
+    border-radius: 2px;
+    padding: 10px 16px;
+    background-color: #313131;
+    color: #AAAAAA;
+    font-size: 1.3rem;
+    margin:0 4px;
+}
+
+#notfication-alarm{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+#subMetaContainer{
+    margin-left: 64px;
+}
+
+#content{
+    font-size: 1.4rem;
+    color: white;
+}
+
+.formatted-string{
+    font-size: 1.4rem;
+	color: #2798DA;
+}
+
+#videMetaContainer {
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.commentheader{
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 32px;
+
+}
+
+.commentheader:nth-child(3){
+}
+
+#commentCount{
+    color: white;
+    font-size: 16px;
+}
+
+.commentSort{
+    display: flex;
+    align-items: center;
+}
+
+#commentInfoSection{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+
+#commentInputSection{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#commentInputContainer{
+    flex: 1;
+}
+
+#commentInput {
+    display: block;
+    padding-bottom: 4px;
+    width: 100%;
+    color: #AAAAAA;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#videoCommentHeadr{
+    margin-bottom: 32px;
+}
+
+#placeholder-area{
+    cursor: text;
+    padding-bottom: 4px;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+    flex: 1;
+}
+
+#simplebox-placeholder{
+    color: #AAAAAA;
+
+}
+
+.profileImg{
+    height:40px;
+    width:40px;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+
+#commentsList{
+
+}
+
+.commentItem{
+    display: flex;
+	margin-bottom: 16px;
+
+}
+
+.commentItem #commentName {
+	font-size: 1.5rem;
+    font-weight: 500;
+	margin-bottom: 2px;
+    color: white;
+}
+
+.commentItem #commentName #commentLasttime{
+    line-height: 2rem;
+    color: #AAAAAA;
+	font-size: 1.2rem;
+}
+
+.comment{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: white;
+}
+
+.commentIcon {
+	display: block;
+	width: 16px;
+	height: 16px;
+    fill: white;
+}
+
+.commentBtn {
+	padding: 8px;
+    color: #AAAAAA;
+    font-size: 1.2rem;
+}
+
+
+.commentreview-holder{
+    margin-top: 4px;
+}
+
+#reviewBtn{
+    padding : 8px 16px;
+}
+
+.reviewcnt{
+    margin-right: 8px;
+    font-size: 1.2rem;
+    color: #AAAAAA;
+}
+
+/* aside */
+aside{
+    position: fixed;
+    width: 72px;
+    top : 56px;
+    left: 0;
+    bottom: 0;
+    background-color: #202020;
+}
+
+.mini-guide-renderer{
+
+}
+
+.sideCategoryList{
+    width: 100%;
+}
+.sideCategoryItem{
+    width: 100%;
+    padding: 16px 0px 14px 0px;
+
+}
+
+.sideCategoryIcon{
+    width: 24px;
+    height: 24px;
+    display: block;
+    fill: #fff;
+    margin-bottom: 9px;
+}
+
+.sideCategoryContainer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sideCategoryList :hover{
+    background-color: #313131;
+}
+
+.sideCategoryTitle{
+    color: white;
+    max-width: 100%;
+    display: block;
+    max-height: 1.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.mainContainer{
+    margin-left: 72px;
+    background-color: #181818;
+    /* flex: 1; */
+}
+
+.tagBtn{
+    color: white;
+    max-width: 20rem;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+
+    margin: 12px 12px 12px 0;
+    height: 32px;
+    border-radius: 16px;
+    display: inline-flex;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0 12px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tagBtn:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tagContainer{
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    top: 56px;
+    background-color: #202020;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tagBtContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnailImg{
+    height: 150px;
+    width: 100%;
+    object-fit: fill;
+}
+
+.contentBox{
+    overflow-y: none;
+    margin-top: 112px;
+    padding: 24px 16px;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.vedioItemContainer{
+    width: 273px;
+    height: 248px;
+    padding:0 8px 40px 8px;
+    margin-bottom: 40px;
+}
+
+.vedioDetailContainer{
+    display: flex;
+    flex-direction: row;
+    
+}
+.channelImg{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+.videoChannelImgContainer{
+    padding: 12px 12px 0px 0px;
+}
+
+.vedioMetaDetail{
+    padding-top: 12px;
+}
+
+.vedioTitle{
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    max-height: 4rem;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin: 0px 0px 6px 0px;
+}
+
+.vedioMetaData p, span{
+    font-size: 1.2rem;
+    color: #aaa;
+}
